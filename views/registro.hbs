@@ -1,0 +1,82 @@
+<h1>Registro</h1>
+
+<p></p>
+
+<h3>1. ¿De qué manera te(les) gustaría participar?</h3>
+<select name="participacion" id="participacion">
+  <option value="personal">Personal</option>
+  <option value="colectivx">Colectivx</option>
+  <option value="cooperativa">Cooperativa</option>
+  <option value="comunidad">Comunidad</option>
+</select>
+
+<h3>2. Nombre del Proyecto</h3>
+<input type="text" name="nombre" id="nombre">
+
+<h3>3. En qué zona del área metropolitana realizan(s) sus actividades</h3>
+<select name="zona" id="zona">
+  <option value="sur">Sur</option>
+  <option value="norte">Norte</option>
+  <option value="oriente">Oriente</option>
+  <option value="poniente">Poniente</option>
+  <option value="nomada">Nómada o Itinerante</option>
+  <option value="internet">Internet</option>
+</select>
+
+<h3>4. Datos de contacto (persona, teléfono, correo o canal de difusión)</h3>
+<textarea name="contacto" id="contacto" cols="30" rows="10"></textarea>
+
+<h3>5. ¿En cual de las siguientes fechas, temas y/o geografías te gustaría participar? </h3>
+<select name="sede" id="sede">
+  <option value="reinoeco">ZONA SUR. Domingo 4 de nov. SALUD-ECOLOGÍA-MOVILIDAD. Reino Eco, Xochimilco.</option>
+  <option value="solnaciente">ZONA NORTE. Sábado de nov. SALUD-ALIMENTACIÓN. Casa del Sol Naciente, Teotihuacan.</option>
+  <option value="casadellago">ZONA PONIENTE. Domingo 11 de nov. DEFENSA DEL TERRITORIO. Foro Abierto OPC Cleta, de la Casa del Lago, Chapultepec</option>
+  <option value="miravalle">ZONA ORIENTE. Sábado 17 nov. ECONOMÍA AUTÓNOMA. Comunidad Miravalle, Iztapalapa</option>
+  <option value="banco">ZONA NORTE. Domingo 18 de nov. CONTRA EL PATRIARCADO. B.A.N.C.O Centro Cultural Autogestionado, Ecatepec</option>
+  <option value="che">ZONA SUR. Sábado 24 nov. AUTOFORMACIÓN Y COMPARTICIÓN DE SABERES. Auditorio Che, Unam </option>
+  <option value="cotantik">ZONA ORIENTE. Domingo 25 de nov. CIERRE / PRESENTACIONES. Cotantik, Iztacalco</option>
+</select>
+
+<h3>6. ¿Con qué actividad te gustaría participar? Sé detalladx</h3>
+<textarea name="actividad" id="actividad" cols="30" rows="10"></textarea>
+<hr>
+
+<h3>7. Duración</h3>
+<input type="text" name="duracion" id="duracion">
+
+<h3>8. Condiciones ideal</h3>
+<input type="text" name="ideales" id="ideales">
+
+<h3>9. Tienes una actividad para niñxs</h3>
+<input type="text" name="ninxs" id="ninxs">
+
+<h4>El autogestival se organiza con la fuerza y voluntado de las personas y los proyectos participantes. Nos organizamos en una asamblea general y luego nos dividimos en comisiones</h4>
+
+<ul>
+  <li><b>Logística</b>: esta comisión se dedica a recibir las propuestas, planear, coordinar y resolver los asuntos relacionados con las actividades que se llevan a cabo durante el autogestival</li>
+  <li><b>Difusión</b>: esta comisión se encarga de generar y hacer públicos los materiales visuales para dar a conocer las actividades que realizamos</li>
+  <li><b>Memoria</b>: su labor es recopilar los registros y documentar pad actividades que se realizadas en los encuentros</li>
+  <li><b>Alimentos</b>: encargadxs de conseguir, transportar, cocinar y dar amor a los alimentos que consumimos en las jornadas</li>
+  <li><b>Enlace</b>: esta comisión se encarga de conectar con los cuates de provincia y otros países y latitudes para ayudarles a coordinar su venida a las jornadas, apoyarles con la coordinación de su viaje y estancia</li>
+</ul>
+
+<h3>10. ¿Les(te) gustaría participar en alguna comisión?</h3>
+<select name="comision" id="comision">
+  <option value="logistica">Logística</option>
+  <option value="difusion">Difusión</option>
+  <option value="memoria">Memoria</option>
+  <option value="alimentos">Alimentos</option>
+  <option value="enlace">Enlace</option>
+  <option value="otra">No tenemos(go) disponibilidad de participar en una comisión, pero me gustaría ayudar el día del evento</option>
+</select>
+
+<h3>11. ¿Qué actividades realizan en tu colectivx ?</h3>
+<textarea name="actividades" id="actividades" cols="30" rows="10"></textarea>
+
+<h3>12. ¿Cómo practican(s) la autogestión?</h3>
+<textarea name="autogestion" id="autogestion" cols="30" rows="10"></textarea>
+
+<h3>13. ¿Cuál es su(tu) principal motivación para participar en el Autogestival?</h3>
+<textarea name="autogestival" id="autogestival" cols="30" rows="10"></textarea>
+
+<button onclick="registrar()"></button>
