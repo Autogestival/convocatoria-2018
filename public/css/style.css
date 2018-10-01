@@ -1,0 +1,33 @@
+body {
+  background-color: #FD553D;
+}
+
+h1, h2 {
+  text-align: center
+}
+
+#container {
+  max-width: 600px;
+  background-color: #64052D;
+  color: white;
+  margin: auto;
+  min-height: 95vh;
+  padding: 20px;
+  border: 3px solid white;
+}
+
+select, textarea, input[type=text] {
+  width: 95%;
+}
+
+.nota {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid darkgray;
+}
+
+button {
+  display: block;
+  font-size: 2em;
+  margin: 20px auto; 
+}

@@ -10,6 +10,7 @@ var registroSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  contacto: String,
   zona: String,
   sede: String,
   actividad: String,

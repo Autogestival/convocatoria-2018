@@ -1,0 +1,37 @@
+<h2>Registros: {{registros.length}}</h2>
+<div class="h-scroll">
+  <table>
+    <tr>
+      <th>Participación</th>
+      <th>Nombre</th>
+      <th>Zona</th>
+      <th>Contacto</th>
+      <th>Sede</th>
+      <th>Actividad</th>
+      <th>Duración</th>
+      <th>Ideales</th>
+      <th>Ninxs</th>
+      <th>Comisión</th>
+      <th>Actividades</th>
+      <th>Autogestión</th>
+      <th>Autogestival</th>
+    </tr>
+    {{#each registros}}
+      <tr>
+        <td>{{participacion}}</td>
+        <td>{{nombre}}</td>
+        <td>{{zona}}</td>
+        <td>{{contacto}}</td>
+        <td>{{sede}}</td>
+        <td>{{actividad}}</td>
+        <td>{{duracion}}</td>
+        <td>{{ideales}}</td>
+        <td>{{ninxs}}</td>
+        <td>{{comision}}</td>
+        <td>{{actividades}}</td>
+        <td>{{autogestion}}</td>
+        <td>{{autogestival}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
