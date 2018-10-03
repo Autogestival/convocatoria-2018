@@ -18,6 +18,7 @@ function registrar () {
   axios.post('/api/registros', body)
     .then((response) => {
       console.log(response)
+      window.location.replace('/gracias')
     })
     .catch((error) => {
       console.log(error)

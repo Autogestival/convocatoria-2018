@@ -8,6 +8,9 @@ router.get('/', function (req, res) {
 router.get('/registro', function (req, res) {
   res.render('registro')
 })
+router.get('/gracias', function (req, res) {
+  res.render('gracias')
+})
 router.get('/enlace', function (req, res) {
   res.render('enlace')
 })

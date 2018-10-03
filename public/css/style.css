@@ -2,6 +2,10 @@ body {
   background-color: #FD553D;
 }
 
+img {
+  width: 100%;
+}
+
 h1, h2 {
   text-align: center
 }
@@ -30,4 +34,39 @@ button {
   display: block;
   font-size: 2em;
   margin: 20px auto; 
+}
+
+#links > div {
+  border: 1px solid white;
+  margin: 10px;
+  padding: 10px;
+}
+
+#links > div:hover {
+  background-color: white;
+  color: #64052D;
+  cursor: pointer;
+}
+
+#links > div:hover a, 
+#links > div a, 
+#links > div a:focus, 
+#links > div a:hover {
+  color: #64052D;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 720px) {
+  #links {
+    display: flex;
+  }
+
+  #links > div {
+    flex: 1;
+  }
+}
+
+#links > div a {
+  text-decoration: none;
+  color: white;
 }
