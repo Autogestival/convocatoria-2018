@@ -35,7 +35,7 @@ const handleFormSubmit = event => {
   axios.post('/api/registros', data)
     .then((response) => {
       console.log(response)
-      // window.location.replace('/gracias')
+      window.location.replace('/gracias')
     })
     .catch((error) => {
       console.log(error)
