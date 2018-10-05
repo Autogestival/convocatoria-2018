@@ -66,6 +66,21 @@ button {
   }
 }
 
+@media screen and (min-width: 720px) {
+  #links, .tabla {
+    display: flex;
+  }
+
+  #links > div, .tabla h4 {
+    flex: 1;
+    padding-right: 5px;
+  }
+
+  .tabla p {
+    flex: 2
+  }
+}
+
 #links > div a {
   text-decoration: none;
   color: white;

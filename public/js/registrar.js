@@ -1,26 +1,48 @@
-function registrar () {
-  let body = {
-    participacion: document.getElementById('participacion').value,
-    nombre: document.getElementById('nombre').value,
-    zona: document.getElementById('zona').value,
-    contacto: document.getElementById('contacto').value,
-    sede: document.getElementById('sede').value,
-    actividad: document.getElementById('actividad').value,
-    duracion: document.getElementById('duracion').value,
-    ideales: document.getElementById('ideales').value,
-    ninxs: document.getElementById('ninxs').value,
-    comision: document.getElementById('comision').value,
-    actividades: document.getElementById('actividades').value,
-    autogestion: document.getElementById('autogestion').value,
-    autogestival: document.getElementById('autogestival').value
+let form
+const formToJSON = elements => [].reduce.call(elements, (data, element) => {
+  if (isValidElement(element) && isValidValue(element)) {
+    if (isCheckbox(element)) {
+      data[element.name] = (data[element.name] || []).concat(element.value)
+    } else if (isMultiSelect(element)) {
+      data[element.name] = getSelectValues(element)
+    } else {
+      data[element.name] = element.value
+    }
   }
-  console.log(body)
-  axios.post('/api/registros', body)
+  return data
+}, {})
+
+const getSelectValues = options => [].reduce.call(options, (values, option) => {
+  return option.selected ? values.concat(option.value) : values
+}, [])
+
+const isValidElement = element => {
+  return element.name && element.value
+}
+
+const isValidValue = element => {
+  return (!['checkbox', 'radio'].includes(element.type) || element.checked);
+}
+
+const isCheckbox = element => element.type === 'checkbox'
+const isMultiSelect = element => element.options && element.multiple
+
+const handleFormSubmit = event => {
+  event.preventDefault()
+  console.log(form.elements)
+  const data = formToJSON(form.elements)
+  console.log(data)
+  axios.post('/api/registros', data)
     .then((response) => {
       console.log(response)
-      window.location.replace('/gracias')
+      // window.location.replace('/gracias')
     })
     .catch((error) => {
       console.log(error)
     })
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  form = document.getElementsByClassName('registro-form')[0]
+  form.addEventListener('submit', handleFormSubmit)
+})
