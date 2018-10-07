@@ -24,13 +24,19 @@ select, textarea, input[type=text] {
   width: 95%;
 }
 
+input#clave {
+  max-width: 200px; 
+}
+
+
+
 .nota {
   margin: 20px;
   padding: 10px;
   border: 2px solid darkgray;
 }
 
-button {
+button[type=submit] {
   display: block;
   font-size: 2em;
   margin: 20px auto; 
@@ -84,4 +90,17 @@ button {
 #links > div a {
   text-decoration: none;
   color: white;
+}
+
+.h-scroll {
+  overflow-x: scroll;
+}
+
+td, th {
+  border-left: 1px solid white;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #FD883D;
 }

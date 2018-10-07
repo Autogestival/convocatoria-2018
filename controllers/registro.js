@@ -1,10 +1,17 @@
 let RegistroModel = require('../models/registro')
 
 function getRegistros (req, res) {
-  RegistroModel.find((err, logs) => {
-    if (err) console.log(err)
-    res.send(logs)
-  })
+  console.log(req.body)
+  if (req.body.clave === process.env.CLAVE) {
+    RegistroModel.find((err, logs) => {
+      if (err) console.log(err)
+      res.send(logs)
+    })
+  }
+  else {
+    res.status('401')
+    res.send('NEL')
+  }
 }
 
 function insertRegistro (req, res) {

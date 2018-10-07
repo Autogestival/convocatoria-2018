@@ -1,165 +1,166 @@
 <script src="/js/registrar.js"></script>
+<div id="container">
+  <h1>Registro</h1>
 
-<h1>Registro</h1>
+  <form class="registro-form">
+  <h3>1. ¿De qué manera te(les) gustaría participar?</h3>
+  <div><input type="radio" name="participacion" value="personal">Personal</div>
+  <div><input type="radio" name="participacion" value="colectivx">Colectivx</div>
+  <div><input type="radio" name="participacion" value="cooperativa">Cooperativa</div>
+  <div><input type="radio" name="participacion" value="comunidad">Comunidad</div>
 
-<form class="registro-form">
-<h3>1. ¿De qué manera te(les) gustaría participar?</h3>
-<div><input type="radio" name="participacion" value="personal">Personal</div>
-<div><input type="radio" name="participacion" value="colectivx">Colectivx</div>
-<div><input type="radio" name="participacion" value="cooperativa">Cooperativa</div>
-<div><input type="radio" name="participacion" value="comunidad">Comunidad</div>
+  <h3>2. Nombre del Proyecto</h3>
+  <input type="text" name="nombre" id="nombre">
 
-<h3>2. Nombre del Proyecto</h3>
-<input type="text" name="nombre" id="nombre">
+  <h3>3. ¿En qué zona del área metropolitana realizan(s) sus actividades?</h3>
+    <div><input type="checkbox" name="zona" value="sur">Sur</div>
+    <div><input type="checkbox" name="zona" value="norte">Norte</div>
+    <div><input type="checkbox" name="zona" value="oriente">Oriente</div>
+    <div><input type="checkbox" name="zona" value="poniente">Poniente</div>
+    <div><input type="checkbox" name="zona" value="nomada">Nómada o Itinerante</div>
+    <div><input type="checkbox" name="zona" value="internet">Internet</div>
 
-<h3>3. ¿En qué zona del área metropolitana realizan(s) sus actividades?</h3>
-  <div><input type="checkbox" name="zona" value="sur">Sur</div>
-  <div><input type="checkbox" name="zona" value="norte">Norte</div>
-  <div><input type="checkbox" name="zona" value="oriente">Oriente</div>
-  <div><input type="checkbox" name="zona" value="poniente">Poniente</div>
-  <div><input type="checkbox" name="zona" value="nomada">Nómada o Itinerante</div>
-  <div><input type="checkbox" name="zona" value="internet">Internet</div>
+  <h3>4. Correo electrónico (indispensable)</h3>
+  <input type="text" id="correo" name="correo">
 
-<h3>4. Correo electrónico (indispensable)</h3>
-<input type="text" id="correo" name="correo">
+  <h3>5. Datos de contacto (persona, teléfono, canal de difusión [tw, fb, blog] )</h3>
+  <textarea name="contacto" id="contacto" cols="30" rows="10"></textarea>
 
-<h3>5. Datos de contacto (persona, teléfono, canal de difusión [tw, fb, blog] )</h3>
-<textarea name="contacto" id="contacto" cols="30" rows="10"></textarea>
+  <h3>6. ¿En cual de las siguientes fechas, temas y/o geografías te gustaría participar? </h3>
+  <div class="nota">
+    <p>Este año, enfocaremos las actividades a distinas temáticas cada día. De manera que, entre cada gremio, fortalezcamos los vínculos, desarollemos soluciones colectivas, y compartamos experiencias y metodologías, </p>
+    <div class="tabla" id="ecologia">
+      <h4>ECOLOGÍA Y MOVILIDAD</h4>
+      <p>Es urgente un modo de vida personal y colectivo que nos detenga de dañar a nuestra querida madre tierra y a todo aquello que la habita, incluyéndonos a nosotrxs mismxs. </p>
+    </div>
+    <div class="tabla" id="salud">
+      <h4>SALUD COMUNITARIA</h4>
+      <p>Nuestros cuerpos y mentes han sido convertidos en negocio para las empresas y gobiernos, pero nuestro bienestar individual y colectivo no les pertenece, y hemos decidido recuperarlo. </p>
+    </div>
+    <div class="tabla" id="territorio">
+      <h4>DEFENZA DEL TERRITORIO</h4>
+      <p>El territorio-cuerpo-tierra se encuentra en una línea frontal de ataque cotidiano, hecho que nos obliga a organizarnos para defendernos y sobrevivir.</p>
+    </div>
+    <div class="tabla" id="economia" >
+      <h4>ECONOMÍA AUTÓNOMA</h4>
+      <p>El mercado de la especulación esta diseñado para mantener el dinero en manos de muy pocos y es practicado sin tomar en cuenta su nivel de destrucción, sin embargo nosotrxs sabemos que otras economías son posibles. </p>
+    </div>
+    <div class="tabla" id="patriarcado">
+      <h4>DECONSTRUYENDO AL PATRIARCADO</h4>
+      <p>Nuestra autonomía continúa siendo mermada por nuestras propias prácticas patriarcales, jerárgicas, machistas y paternalistas. La apuesta es construir juntxs otras formas de relacionarnos en la que todxs seamos beneficiadxs. </p>
+    </div>
+    <div class="tabla" id="saberes">
+      <h4>SABERES Y APRENDIZAJES LIBRES</h4>
+      <p>La recuperación de nuestros saberes colectivos, ancestrales y la autogestión de nuestros procesos de enseñanza-aprendizaje son parte de nuestra rebeldía ante la imposición. </p>
+    </div>
+    <div class="tabla" id="tianguis">
+      <h4>TIANGUIS Y FIESTÓN REBELDE</h4>
+      <p>La dinga indignación mantiene viva la alegría y nos permite continuar la lucha. Si no podemos gozar, ésta no es nuestra revolución. </p>
+    </div>
 
-<h3>6. ¿En cual de las siguientes fechas, temas y/o geografías te gustaría participar? </h3>
-<div class="nota">
-  <p>Este año, enfocaremos las actividades a distinas temáticas cada día. De manera que, entre cada gremio, fortalezcamos los vínculos, desarollemos soluciones colectivas, y compartamos experiencias y metodologías, </p>
-  <div class="tabla" id="ecologia">
-    <h4>ECOLOGÍA Y MOVILIDAD</h4>
-    <p>Es urgente un modo de vida personal y colectivo que nos detenga de dañar a nuestra querida madre tierra y a todo aquello que la habita, incluyéndonos a nosotrxs mismxs. </p>
-  </div>
-  <div class="tabla" id="salud">
-    <h4>SALUD COMUNITARIA</h4>
-    <p>Nuestros cuerpos y mentes han sido convertidos en negocio para las empresas y gobiernos, pero nuestro bienestar individual y colectivo no les pertenece, y hemos decidido recuperarlo. </p>
-  </div>
-  <div class="tabla" id="territorio">
-    <h4>DEFENZA DEL TERRITORIO</h4>
-    <p>El territorio-cuerpo-tierra se encuentra en una línea frontal de ataque cotidiano, hecho que nos obliga a organizarnos para defendernos y sobrevivir.</p>
-  </div>
-  <div class="tabla" id="economia" >
-    <h4>ECONOMÍA AUTÓNOMA</h4>
-    <p>El mercado de la especulación esta diseñado para mantener el dinero en manos de muy pocos y es practicado sin tomar en cuenta su nivel de destrucción, sin embargo nosotrxs sabemos que otras economías son posibles. </p>
-  </div>
-  <div class="tabla" id="patriarcado">
-    <h4>DECONSTRUYENDO AL PATRIARCADO</h4>
-    <p>Nuestra autonomía continúa siendo mermada por nuestras propias prácticas patriarcales, jerárgicas, machistas y paternalistas. La apuesta es construir juntxs otras formas de relacionarnos en la que todxs seamos beneficiadxs. </p>
-  </div>
-  <div class="tabla" id="saberes">
-    <h4>SABERES Y APRENDIZAJES LIBRES</h4>
-    <p>La recuperación de nuestros saberes colectivos, ancestrales y la autogestión de nuestros procesos de enseñanza-aprendizaje son parte de nuestra rebeldía ante la imposición. </p>
-  </div>
-  <div class="tabla" id="tianguis">
-    <h4>TIANGUIS Y FIESTÓN REBELDE</h4>
-    <p>La dinga indignación mantiene viva la alegría y nos permite continuar la lucha. Si no podemos gozar, ésta no es nuestra revolución. </p>
-  </div>
+    <p>En pro de descentralizar y convocar por cercanía, se buscaron sedes alejadas del centra hacia las 4 direcciones: Sur, Poniente, Oriente y Poniente</p>
+    <p>Entendemos que por cuestiones de tiempos, algunxs participantes no podrán encajar por completo sus propuestas con las temáticas propuestas. Invitamos sin embargo, a inscribirlas ;)</p>
+  </div><br>
 
-  <p>En pro de descentralizar y convocar por cercanía, se buscaron sedes alejadas del centra hacia las 4 direcciones: Sur, Poniente, Oriente y Poniente</p>
-  <p>Entendemos que por cuestiones de tiempos, algunxs participantes no podrán encajar por completo sus propuestas con las temáticas propuestas. Invitamos sin embargo, a inscribirlas ;)</p>
-</div><br>
+    <div>
+      <input type="checkbox" name="sede" id="reinoeco" value="reinoeco">
+      <label for="reinoeco">ZONA <b>SUR</b> - <i>ECOLOGÍA Y MOVILIDAD</i></label><a href="#"></a>
+    </div>
+    <div><label for="reinoeco"> Reino Eco, Xochimilco. - Dom, 4 de nov</label></div><br>
+    <div>
+      <input type="checkbox" name="sede" id="solnaciente" value="solnaciente">
+      <label for="solnaciente">ZONA <b>NORTE</b> - <i>SALUD COMUNITARIA</i> </label><a href="#"></a>
+    </div>
+    <div><label for="solnaciente"> Casa del Sol Naciente, Teotihuacan - Sáb, 10 de nov</label></div><br>
+    <div>
+      <input type="checkbox" name="sede" id="casadellago" value="casadellago">
+      <label for="casadellago">ZONA <b>PONIENTE</b> - <i>DEFENSA DEL TERRITORIO</i></label><a href="#"></a>
+    </div>
+    <div><label for="casadellago">  Foro Abierto OPC Cleta, de la Casa del Lago, Chapultepec - Dom, 11 de nov</label></div><br>
+    <div>
+      <input type="checkbox" name="sede" id="miravalle" value="miravalle">
+      <label for="miravalle">ZONA <b>ORIENTE</b> - <i>ECONOMÍA AUTÓNOMA</i></label><a href="#"></a>
+    </div>
+    <div><label for="miravalle">  Comunidad Miravalle, Iztapalapa -  Sáb, 17 nov </label></div><br>
+    <div>
+      <input type="checkbox" name="sede" id="banco" value="banco">
+      <label for="banco">ZONA <b>NORTE</b> - <i>DECONSTRUYENDO EL PATRIARCADO</i> </label><a href="#"></a>
+    </div>
+    <div><label for="banco"> B.A.N.C.O Centro Cultural Autogestionado, Ecatepec -  Dom, 18 de nov</label></div><br>
+    <div>
+      <input type="checkbox" name="sede" id="che" value="che">
+      <label for="che">ZONA <b>SUR</b> - <i>SABERES Y APREDIZAJES LIBRES</i></label><a href="#"></a>
+    </div>
+    <div><label for="che"> Auditorio Che, Unam  - Sáb, 24 nov </label></div><br>
+    <div>
+      <input type="checkbox" name="sede" id="cotantik" value="cotantik">
+      <label for="cotantik">ZONA <b>ORIENTE</b> -<i>TIANGUIS Y FIESTÓN REBELDE</i></label><a href="#"></a>
+    </div>
+    <div><label for="cotantik"> Cotantik, Iztacalco - Dom, 25 de nov</label></div><br>
 
-  <div>
-    <input type="checkbox" name="sede" id="reinoeco" value="reinoeco">
-    <label for="reinoeco">ZONA <b>SUR</b> - <i>ECOLOGÍA Y MOVILIDAD</i></label><a href="#"></a>
-  </div>
-  <div><label for="reinoeco"> Reino Eco, Xochimilco. - Dom, 4 de nov</label></div><br>
-  <div>
-    <input type="checkbox" name="sede" id="solnaciente" value="solnaciente">
-    <label for="solnaciente">ZONA <b>NORTE</b> - <i>SALUD COMUNITARIA</i> </label><a href="#"></a>
-  </div>
-  <div><label for="solnaciente"> Casa del Sol Naciente, Teotihuacan - Sáb, 10 de nov</label></div><br>
-  <div>
-    <input type="checkbox" name="sede" id="casadellago" value="casadellago">
-    <label for="casadellago">ZONA <b>PONIENTE</b> - <i>DEFENSA DEL TERRITORIO</i></label><a href="#"></a>
-  </div>
-  <div><label for="casadellago">  Foro Abierto OPC Cleta, de la Casa del Lago, Chapultepec - Dom, 11 de nov</label></div><br>
-  <div>
-    <input type="checkbox" name="sede" id="miravalle" value="miravalle">
-    <label for="miravalle">ZONA <b>ORIENTE</b> - <i>ECONOMÍA AUTÓNOMA</i></label><a href="#"></a>
-  </div>
-  <div><label for="miravalle">  Comunidad Miravalle, Iztapalapa -  Sáb, 17 nov </label></div><br>
-  <div>
-    <input type="checkbox" name="sede" id="banco" value="banco">
-    <label for="banco">ZONA <b>NORTE</b> - <i>DECONSTRUYENDO EL PATRIARCADO</i> </label><a href="#"></a>
-  </div>
-  <div><label for="banco"> B.A.N.C.O Centro Cultural Autogestionado, Ecatepec -  Dom, 18 de nov</label></div><br>
-  <div>
-    <input type="checkbox" name="sede" id="che" value="che">
-    <label for="che">ZONA <b>SUR</b> - <i>SABERES Y APREDIZAJES LIBRES</i></label><a href="#"></a>
-  </div>
-  <div><label for="che"> Auditorio Che, Unam  - Sáb, 24 nov </label></div><br>
-  <div>
-    <input type="checkbox" name="sede" id="cotantik" value="cotantik">
-    <label for="cotantik">ZONA <b>ORIENTE</b> -<i>TIANGUIS Y FIESTÓN REBELDE</i></label><a href="#"></a>
-  </div>
-  <div><label for="cotantik"> Cotantik, Iztacalco - Dom, 25 de nov</label></div><br>
+  <h3>7. ¿Con qué actividad(es) te gustaría participar? Sé detalladx y, por favor, detalla en qué sede y/o fechas</h3>
+  <textarea name="actividad" id="actividad" cols="30" rows="10"></textarea>
 
-<h3>7. ¿Con qué actividad(es) te gustaría participar? Sé detalladx y, por favor, detalla en qué sede y/o fechas</h3>
-<textarea name="actividad" id="actividad" cols="30" rows="10"></textarea>
+  <h3>8. Duración</h3>
+  <input type="text" name="duracion" id="duracion">
 
-<h3>8. Duración</h3>
-<input type="text" name="duracion" id="duracion">
+  <h3>9. Condiciones ideales (tipo de espacio, número de personas, herramientas, etc)</h3>
+  <textarea name="ideales" id="ideales" cols="30" rows="10"></textarea>
 
-<h3>9. Condiciones ideales (tipo de espacio, número de personas, herramientas, etc)</h3>
-<textarea name="ideales" id="ideales" cols="30" rows="10"></textarea>
+  <h3>10. ¿Tienes una actividad para niñxs?</h3>
+  <div class="nota">
+    <p>Intentaremos que cada día haya un espacio para que lxs niñxs puedan aprender y/o colaborar mientras que su madre o padre participa en otras actividades</p>
+  </div>
+  <input type="text" name="ninxs" id="ninxs" placeholder="actividad">
 
-<h3>10. ¿Tienes una actividad para niñxs?</h3>
-<div class="nota">
-  <p>Intentaremos que cada día haya un espacio para que lxs niñxs puedan aprender y/o colaborar mientras que su madre o padre participa en otras actividades</p>
+  <h3>11. ¿Tendrían(s) disponibilidad de colaborar con espacio para hospedar o cocinar con lxs compas de otras geografías?</h3>
+  <div class="nota">
+    <p>Intentaremos apoyar a venir a personas con proyectos autogestivos fuera del Area Metropolitana con hospedaje, comidas y moviendose en la ciudad </p>
+  </div>
+  <input type="checkbox" name="enlace" id="enlace">¡Sí!
+
+  <h3>12. ¿Les(te) gustaría colaborar en alguna comisión?</h3>
+  <div class="nota">
+    <h4>El autogestival se organiza con la fuerza y voluntado de las personas y los proyectos participantes. Nos organizamos en una asamblea general y luego nos dividimos en comisiones</h4>
+
+    <div class="tabla" id="logistica">
+      <h4>Logística</h4>
+      <p>Esta comisión se dedica a recibir las propuestas, planear, coordinar y resolver los asuntos relacionados con las actividades que se llevan a cabo durante el autogestival</p>
+    </div>      
+    <div class="tabla" id="difusion">
+      <h4>Difusión</h4>
+      <p>Esta comisión se encarga de generar y hacer públicos los materiales visuales para dar a conocer las actividades que realizamos</p>
+    </div>      
+    <div class="tabla" id="memoria">
+      <h4>Memoria</h4>
+      <p>Su labor es recopilar los registros y documentar pad actividades que se realizadas en los encuentros</p>
+    </div>      
+    <div class="tabla" id="alimentos">
+      <h4>Alimentos</h4>
+      <p>Encargadxs de conseguir, transportar, cocinar y dar amor a los alimentos que consumimos en las jornadas</p>
+    </div>      
+    <div class="tabla" id="enlace">
+      <h4>Enlace</h4>
+      <p>Esta comisión se encarga de conectar con lxs compas de otros estados del país, otros países y latitudes para ayudarles a coordinar su venida a las jornadas, apoyarles con la coordinación de su viaje y estancia</p>
+    </div>      
+  </div><br>
+
+  <div><input type="checkbox" name="comision" value="logistica">Logística</div>
+  <div><input type="checkbox" name="comision" value="difusion">Difusión</div>
+  <div><input type="checkbox" name="comision" value="memoria">Memoria</div>
+  <div><input type="checkbox" name="comision" value="alimentos">Alimentos</div>
+  <div><input type="checkbox" name="comision" value="enlace">Enlace</div>
+  <div><input type="checkbox" name="comision" value="otra">No tenemos(go) disponibilidad de participar en una comisión, pero me gustaría colaborar el día del evento</div>
+
+  <h3>13. ¿Qué actividades realizan en tu colectivx ?</h3>
+  <textarea name="actividades" id="actividades" cols="30" rows="10"></textarea>
+
+  <h3>14. ¿Cómo practican(s) la autogestión?</h3>
+  <textarea name="autogestion" id="autogestion" cols="30" rows="10"></textarea>
+
+  <h3>15. ¿Cuál es su(tu) principal motivación para participar en el Autogestival?</h3>
+  <textarea name="autogestival" id="autogestival" cols="30" rows="10"></textarea>
+
+  <button type="submit" id="submit">Enviar</button>
+  </form>
 </div>
-<input type="text" name="ninxs" id="ninxs" placeholder="actividad">
-
-<h3>11. ¿Tendrían(s) disponibilidad de colaborar con espacio para hospedar o cocinar con lxs compas de otras geografías?</h3>
-<div class="nota">
-  <p>Intentaremos apoyar a venir a personas con proyectos autogestivos fuera del Area Metropolitana con hospedaje, comidas y moviendose en la ciudad </p>
-</div>
-<input type="checkbox" name="enlace" id="enlace">¡Sí!
-
-<h3>12. ¿Les(te) gustaría colaborar en alguna comisión?</h3>
-<div class="nota">
-  <h4>El autogestival se organiza con la fuerza y voluntado de las personas y los proyectos participantes. Nos organizamos en una asamblea general y luego nos dividimos en comisiones</h4>
-
-  <div class="tabla" id="logistica">
-    <h4>Logística</h4>
-    <p>Esta comisión se dedica a recibir las propuestas, planear, coordinar y resolver los asuntos relacionados con las actividades que se llevan a cabo durante el autogestival</p>
-  </div>      
-  <div class="tabla" id="difusion">
-    <h4>Difusión</h4>
-    <p>Esta comisión se encarga de generar y hacer públicos los materiales visuales para dar a conocer las actividades que realizamos</p>
-  </div>      
-  <div class="tabla" id="memoria">
-    <h4>Memoria</h4>
-    <p> su labor es recopilar los registros y documentar pad actividades que se realizadas en los encuentros</p>
-  </div>      
-  <div class="tabla" id="alimentos">
-    <h4>Alimentos</h4>
-    <p> encargadxs de conseguir, transportar, cocinar y dar amor a los alimentos que consumimos en las jornadas</p>
-  </div>      
-  <div class="tabla" id="enlace">
-    <h4>Enlace</h4>
-    <p> esta comisión se encarga de conectar con los cuates de provincia y otros países y latitudes para ayudarles a coordinar su venida a las jornadas, apoyarles con la coordinación de su viaje y estancia</p>
-  </div>      
-</div><br>
-
-<div><input type="checkbox" name="comision" value="logistica">Logística</div>
-<div><input type="checkbox" name="comision" value="difusion">Difusión</div>
-<div><input type="checkbox" name="comision" value="memoria">Memoria</div>
-<div><input type="checkbox" name="comision" value="alimentos">Alimentos</div>
-<div><input type="checkbox" name="comision" value="enlace">Enlace</div>
-<div><input type="checkbox" name="comision" value="otra">No tenemos(go) disponibilidad de participar en una comisión, pero me gustaría colaborar el día del evento</div>
-
-<h3>13. ¿Qué actividades realizan en tu colectivx ?</h3>
-<textarea name="actividades" id="actividades" cols="30" rows="10"></textarea>
-
-<h3>14. ¿Cómo practican(s) la autogestión?</h3>
-<textarea name="autogestion" id="autogestion" cols="30" rows="10"></textarea>
-
-<h3>15. ¿Cuál es su(tu) principal motivación para participar en el Autogestival?</h3>
-<textarea name="autogestival" id="autogestival" cols="30" rows="10"></textarea>
-
-<button type="submit">Enviar</button>
-</form>

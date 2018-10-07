@@ -19,6 +19,7 @@ var registroSchema = mongoose.Schema({
   ideal: String,
   ninxs: String,
   comision: String,
+  enlace: Boolean,
   actividades: String,
   autogestion: String,
   autogestival: String

@@ -28,6 +28,7 @@ const isCheckbox = element => element.type === 'checkbox'
 const isMultiSelect = element => element.options && element.multiple
 
 const handleFormSubmit = event => {
+  document.getElementById('submit').disabled = true
   event.preventDefault()
   console.log(form.elements)
   const data = formToJSON(form.elements)
