@@ -15,6 +15,7 @@ function getRegistros (req, res) {
 }
 
 function insertRegistro (req, res) {
+  console.log(req.body)
   let newLog = new RegistroModel(req.body)
   newLog.save((err, registroInsertado) => {
     if (err) console.log(err)
