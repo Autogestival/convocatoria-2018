@@ -33,7 +33,7 @@ const handleFormSubmit = event => {
   console.log(form.elements)
   const data = formToJSON(form.elements)
   console.log(data)
-  axios.post('/api/enlaces', data)
+  axios.post('/api/enlace', data)
     .then((response) => {
       console.log(response)
       window.location.replace('/gracias')
