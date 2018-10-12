@@ -14,6 +14,9 @@ router.get('/gracias', function (req, res) {
 router.get('/enlace', function (req, res) {
   res.render('enlace')
 })
+router.get('/enlace/admin', function (req, res) {
+  res.render('enlace-admin')
+})
 router.get('/admin', function (req, res) {
   registroModel.find((err, registros) => {
     if (err) console.log(err)

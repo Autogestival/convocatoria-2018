@@ -2,6 +2,7 @@ var express = require('express')
 var bodyParser = require('body-parser')
 
 var registroRoutes = require('./routes/registro')
+var enlaceRoutes = require('./routes/enlace')
 var viewRoutes = require('./routes/views')
 
 var app = express()
@@ -18,6 +19,7 @@ app.use(express.static('public'))
 
 //
 app.use('/api/registros', registroRoutes)
+app.use('/api/enlace', enlaceRoutes)
 app.use('/', viewRoutes)
 
 app.listen(3000, function () {
